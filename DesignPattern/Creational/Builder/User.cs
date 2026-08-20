@@ -22,5 +22,8 @@ public class User
         _age = age;
     }
     
-    
+    public override string ToString()
+    {
+        return $"User {{ FirstName: {_firstName}, LastName: {_lastName}, Email: {_email}, PhoneNumber: {_phoneNumber}, Age: {_age} }}";
+    }
 }

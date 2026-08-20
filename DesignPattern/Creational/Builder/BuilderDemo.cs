@@ -1,8 +1,8 @@
 namespace DesignPattern.Creational.Builder;
 
-public class Program
+public class BuilderDemo
 {
-    public static void Main(string[] args)
+    public static void Run()
     {
         var userDto = new AdminUserDtoBuildler().
                                         WithAge(10)
@@ -11,6 +11,8 @@ public class Program
                                         .WithLastName("Doe")
                                         .WithPhoneNumber("01983938900").Build();
         
-        Console.WriteLine(userDto);
+        Console.WriteLine($"AdminUser created: {userDto.ToString()}");
     }
+    
+    
 }
