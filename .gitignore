@@ -1,0 +1,42 @@
+# =========================================================================
+# Build Results (Compiled binaries and object files)
+# =========================================================================
+[Bb]in/
+[Oo]bj/
+*.msi
+*.exe
+*.dll
+
+# =========================================================================
+# IDE and Editor Specific Files
+# =========================================================================
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# =========================================================================
+# NuGet Packages & Dependencies
+# =========================================================================
+# Restore artifacts
+project.lock.json
+project.fragment.lock.json
+
+# If you use a local packages folder instead of global cache
+packages/
+
+# =========================================================================
+# Logs, Testing, and Diagnostics
+# =========================================================================
+*.log
+*.binlog
+[Tt]est[Rr]esult*/
