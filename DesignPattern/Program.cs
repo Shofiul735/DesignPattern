@@ -2,27 +2,28 @@
 using DesignPattern.Creational.Factory;
 
 #region Builder
-
-Console.WriteLine("Creational Design Pattern started.");
+Console.WriteLine("###############################");
 
 Console.WriteLine("Builder Pattern started");
 BuilderDemo.Run();
 Console.WriteLine("Builder Pattern ended");
 
-Console.WriteLine("Creational Design Pattern ended.");
-
+Console.WriteLine("###############################");
 #endregion
 
 #region Factory
+Console.WriteLine("");
+Console.WriteLine("###############################");
 Console.WriteLine("Factory pattern started");
-var factory = new LogisticsFactory();
-factory.CreateTransport(new Ship());
-factory.PlanLogistics();
+var roadLogistics = new RoadLogistics();
+roadLogistics.PlanLogistics();
 
-factory.CreateTransport(new Truck());
-factory.PlanLogistics();
+var seaLogistics = new SeaLogistics();
+seaLogistics.PlanLogistics();
+
 
 Console.WriteLine("Factory pattern ended");
+Console.WriteLine("###############################");
 #endregion
 
 

@@ -40,6 +40,16 @@ public class AdminUserDtoBuildler : IUserDtoBuilder
 
     public User Build()
     {
+        if (_age > 100 || _age < 0)
+        {
+            throw new ArgumentException("Age must be between 0 and 100");
+        }
+        
+        if (_phoneNumber.Length != 11)
+        {
+            throw new ArgumentException("Phone number must contain 11 digits");
+        }
+        
         return new User(_firstName, _lastName, _email, _phoneNumber, _age);
     }
 }

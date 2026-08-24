@@ -1,7 +1,12 @@
 namespace DesignPattern.Creational.Factory;
 
-public interface ILogistics
+public abstract class ILogistics
 {
-    public void CreateTransport(ITransport transport);
-    public void PlanLogistics();
+    public abstract ITransport  CreateTransport();
+
+    public void PlanLogistics()
+    {
+        var transport = CreateTransport();
+        Console.WriteLine(transport.Deliver());
+    }
 }
