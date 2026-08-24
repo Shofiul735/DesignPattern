@@ -1,6 +1,6 @@
 namespace DesignPattern.Creational.Factory;
 
-public class Ship:Transport
+public class Ship:ITransport
 {
     public string Deliver()
     {

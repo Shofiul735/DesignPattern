@@ -1,9 +1,9 @@
 namespace DesignPattern.Creational.Factory;
 
-public class LogisticsFactory : Logistics
+public class LogisticsFactory : ILogistics
 {
-    public Transport _creator;
-    public void CreateTransport(Transport transport)
+    public ITransport _creator;
+    public void CreateTransport(ITransport transport)
     {
        _creator = transport;
     }

@@ -1,6 +1,6 @@
 namespace DesignPattern.Creational.Factory;
 
-public class Truck : Transport
+public class Truck : ITransport
 {
     public string Deliver()
     {

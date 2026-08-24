@@ -1,6 +1,6 @@
 namespace DesignPattern.Creational.Factory;
 
-public interface Transport
+public interface ITransport
 {
     public string Deliver();
 }
